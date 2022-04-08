@@ -34,12 +34,22 @@ body {
   width: 100%;
   height: 100vh;
   margin: auto;
-  border: 10px solid red;
   background-color: hsl(185deg, 75%, 39%);
+}
+.wrap > :nth-child(1) {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
 }
 .wrap > :nth-child(2) {
   position: absolute;
-  top: -5100px;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+  transform: rotate(180deg);
 }
 .wrap .dark {
   color: rgb(0, 0, 0);
@@ -70,10 +80,15 @@ body {
   display: flex;
   flex-direction: column;
   z-index: 1;
+  position: relative;
 }
 .wrap .card-top svg {
+  position: relative;
+  top: 0;
+  right: 0;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  width: 320px;
 }
 .wrap .card-top .img {
   display: flex;
