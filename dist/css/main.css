@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@300;400;500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  background-position: center;
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  border: 10px solid red;
+  background-color: hsl(185deg, 75%, 39%);
+}
+.wrap > :nth-child(2) {
+  position: absolute;
+  top: -5100px;
+}
+.wrap .dark {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+.wrap .grey {
+  color: hsl(227deg, 10%, 46%);
+  text-align: center;
+  margin-top: 0.5rem;
+}
+.wrap .card {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: #fff;
+  z-index: 1;
+}
+.wrap .card-top {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+.wrap .card-top svg {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.wrap .card-top .img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: auto;
+  top: -50px;
+}
+.wrap .card-top .img img {
+  width: 100px;
+  height: 100px;
+  display: block;
+  border-radius: 50%;
+}
+.wrap .card-top .img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 97px;
+  height: 95px;
+  border: 6px solid rgb(254, 253, 253);
+  border-radius: 50%;
+}
+.wrap .card .bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px dotted grey;
+  width: 100%;
+  padding-bottom: 30px;
+  padding-top: 10px;
+}
+.wrap .card .bottom > div {
+  margin: 0 1rem;
+}
+
+/*# sourceMappingURL=main.css.map */

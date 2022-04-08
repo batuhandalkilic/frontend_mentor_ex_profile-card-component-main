@@ -1,0 +1,124 @@
+@use 'base';
+@use 'unitilies' as u;
+
+
+
+.wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    border: 10px solid red;
+    background-color: hsl(185, 75%, 39%);
+
+
+
+   > :nth-child(2){
+    position: absolute;
+    top: -5100px;
+}
+
+
+
+    .dark{
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        font-size: 1.2rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .grey{
+        color:hsl(227, 10%, 46%) ;
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+
+   
+    .card{
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;    
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;     
+        background-color: #fff;
+        z-index: 1;
+
+      
+
+
+        
+        
+        
+
+        &-top{
+            display: flex;
+            flex-direction: column;
+            z-index: 1;
+
+            svg{
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+                
+                
+            }
+
+            .img{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                margin: auto;
+                top: -50px;
+
+                img{
+
+                width: 100px;
+                height: 100px;
+                display: block;
+                border-radius: 50%;
+
+                }
+                 
+
+                &::after{
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    
+                    width: 97px;
+                    height: 95px;
+                    border: 6px solid rgb(254, 253, 253);
+                    border-radius: 50%;
+
+                }
+            }
+        }
+
+        .bottom{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-top: 2px dotted grey;
+            width: 100%;
+            padding-bottom: 30px;
+            padding-top: 10px;
+            
+            
+            
+
+            > div{
+                margin: 0 1rem;
+            }
+        }
+
+    }
+}
