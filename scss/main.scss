@@ -173,8 +173,10 @@
             left: 0px;
     
             ellipse{
-                rx:250px;
-                ry:250px;
+                rx:200px;
+                ry:200px;
+                cx:-20px;
+                cy:80px;
             }
         }
     
@@ -187,8 +189,10 @@
             right: 0px;
     
             ellipse{
-                rx:250px;
-                ry:250px;
+                rx:200px;
+                ry:200px;
+                cx:-20px;
+                cy:80px;
             }
         }
     }
