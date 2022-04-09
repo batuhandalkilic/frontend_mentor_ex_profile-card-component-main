@@ -17,25 +17,36 @@
 
     > :nth-child(1){
         position: absolute;
-        width: 900px;
-        height: 900px;
-        top:  -100px;
+        width: 70%;
+        height: 100%;
+        top:  0px;
         left: 0px;
 
         ellipse{
-            rx:700px;
-            ry:600px;
+            rx:600px;
+            ry:550px;
+            cx:150px;
+            cy:50px
+           
         }
     }
 
     
     > :nth-child(2){
         position: absolute;
-        width: 900px;
-        height: 900px;
-        bottom:  0;
-        right: 0;
+        width: 70%;
+        height: 100%;
+        bottom:  0px;
+        right: 0px;
         transform: rotate(180deg);
+
+        ellipse{
+            rx:500px;
+            ry:350px;
+            cx:200px;
+            cy:50px
+           
+        }
         
     }
 
