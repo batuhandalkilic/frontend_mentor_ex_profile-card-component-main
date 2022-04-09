@@ -38,15 +38,19 @@ body {
 }
 .wrap > :nth-child(1) {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  bottom: 0;
-  left: 0;
+  width: 900px;
+  height: 900px;
+  top: -100px;
+  left: 0px;
+}
+.wrap > :nth-child(1) ellipse {
+  rx: 700px;
+  ry: 600px;
 }
 .wrap > :nth-child(2) {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 900px;
+  height: 900px;
   bottom: 0;
   right: 0;
   transform: rotate(180deg);
@@ -125,6 +129,31 @@ body {
 }
 .wrap .card .bottom > div {
   margin: 0 1rem;
+}
+
+@media screen and (max-width: 500px) {
+  .wrap > :nth-child(1) {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    top: 0px;
+    left: 0px;
+  }
+  .wrap > :nth-child(1) ellipse {
+    rx: 250px;
+    ry: 250px;
+  }
+  .wrap > :nth-child(2) {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    bottom: 0px;
+    right: 0px;
+  }
+  .wrap > :nth-child(2) ellipse {
+    rx: 250px;
+    ry: 250px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
